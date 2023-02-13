@@ -1,0 +1,221 @@
+tabs:
+    fields:
+        # TAB: Basic info
+        website_name:
+            tab: Basic Info
+            label: Website Name
+            type: text
+            default: AM Solution
+
+        website_first_text:
+            tab: Basic Info
+            label: Начало текста
+            type: text
+            default: партнер
+
+        website_url:
+            tab: Basic Info
+            label: URL
+            type: text
+            default: https://1c.kz
+
+        website_url_text:
+            tab: Basic Info
+            label: Текст URL
+            type: text
+            default: 1С Франчайзи
+
+        website_author:
+            tab: Basic Info
+            label: Author
+            type: text
+            default: The Kaisarhan Dev
+    
+    
+        description:
+            tab: Basic Info
+            label: Description
+            type: textarea
+            default: A free flat landing page theme using Tailwindcss.
+    
+        # TAB: ONE
+        one_title:
+            tab: One
+            label: Title 
+            type: text
+            default: About us
+        
+        one_description:
+            tab: One  
+            label: Description 
+            type: textarea
+            default: Tail aliquip labore pig sirloin pork prosciutto landjaeger ham, cupim adipisicing eiusmod sunt. Strip steak sausage shank kielbasa fatback pork belly.
+        
+
+        one_items:
+            tab: One
+            label: Price
+            titleFrom: title
+            prompt: Add new product
+            type: repeater
+            form:
+                fields:
+                    name:
+                        label: Name
+                        type: text
+                        default: Product name
+                        span: left
+                    price:
+                        label: Цена
+                        type: text
+                        default: 20000тг
+                        span: right
+                    description:
+                        label: Description
+                        type: textarea
+
+        # TAB: TWO
+        two_title:
+            tab: Two
+            label: Title 
+            type: text
+            default: IT-ИНФРАСТРУКТУРА, ОБСЛУЖИВАНИЕ СЕРВЕРОВ
+        
+        two_description:
+            tab: Two
+            label: Description 
+            type: textarea
+            default: Что входит в услугу обслуживания IT-инфраструктуры и серверов
+        
+
+        two_items:
+            tab: Two
+            label: Service
+            titleFrom: title
+            prompt: Add new service
+            type: repeater
+            form:
+                fields:
+                    name:
+                        label: Name первый элемент
+                        type: text
+                        default: Product name
+                        span: left
+                    icon:
+                        label: icon(учитывайте solid brands и др)
+                        type: text
+                        default: solid major fa-network-wired
+                        span: right
+                    name_two:
+                        label: Name второй элемент
+                        type: text
+                        default: Product name
+                        span: left
+                    icon_two:
+                        label: icon(учитывайте solid brands и др)
+                        type: text
+                        default: solid major fa-server
+                        span: right
+
+        # TAB: THREE
+        three_title:
+            tab: Three
+            label: Начало заголовка
+            type: text
+            default: внедрение
+        
+        three_url_title:
+            tab: Three
+            label: Текст url
+            type: text
+            default: bitrix24
+            span: left
+        
+        three_url:
+            tab: Three
+            label: Url текста
+            type: text
+            default: https://www.bitrix24.kz
+            span: right
+
+        three_last_text:
+            tab: Three
+            label: Продолжения заголовки
+            type: text
+            default: в ваш бизнес
+
+        three_description:
+            tab: Three
+            label: Description 
+            type: textarea
+            default: Для любого бизнеса важно правильное управление. Без инновационных программных решений успешное развитие компании - невозможно. Приходится учитывать слишком много факторов, требуется высокая скорость реагирования сотрудников и руководства в самых различных ситуациях.
+
+        three_items:
+            tab: Three
+            label: Service
+            titleFrom: title
+            prompt: Add new elements
+            type: repeater
+            form:
+                fields:
+                    name:
+                        label: Name первый элемент
+                        type: text
+                        default: CRM
+                        span: left
+                    icon:
+                        label: icon(учитывайте solid brands и др)
+                        type: text
+                        default: solid major fa-network-wired
+                        span: right
+                    name_three:
+                        label: Name второй элемент
+                        type: text
+                        default: Salebot(WatsApp, Telegram, Vk, Facebook, Viber и др)
+                        span: left
+                    icon_three:
+                        label: icon(учитывайте solid brands и др)
+                        type: text
+                        default: solid major fa-server
+                        span: right
+        
+
+        # TAB: CONTACT
+        mail_title:
+            tab: Mail
+            label: Title
+            type: text
+            default: Почта
+
+        contact_description:
+            tab: Mail
+            label: Description
+            type: textarea
+
+        contact_image:
+            tab: Mail
+            label: Image
+            type: mediafinder
+            mode: image
+
+        # TAB: SOCIAL 
+        social_title:
+            tab: ICON
+            label: Title
+            type: text
+            default: Follow us
+
+        social_telegram:
+            tab: ICON
+            label: Telegram URL
+            type: text
+
+        social_phone:
+            tab: ICON
+            label: Phone number
+            type: text
+
+        social_whasApp:
+            tab: ICON
+            label: WatsApp URL
+            type: text

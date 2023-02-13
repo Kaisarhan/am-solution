@@ -1,0 +1,43 @@
+description = "Default layout"
+==
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>{{ this.page.title }}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+        <!-- <link rel="icon" type="image/png" href="{{ 'assets/images/winter.png'|theme }}"> -->
+        <link href="{{ 'assets/src/css/main.css'|theme }}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        {% styles %}
+    </head>
+    <body class="is-preload">
+            {% partial 'header' %}
+
+            {% partial 'one' %}
+
+            {% partial 'two' %}
+
+            {% partial 'three' %}
+
+            {% partial 'four' %}
+
+            {% partial 'footer' %}
+            
+            
+
+            <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+            <script src="{{'assets/src/js/jquery.scrollex.min.js'|theme }}"></script>
+            <script src="{{'assets/src/js/jquery.scrolly.min.js'|theme }}"></script>
+            <script src="{{'assets/src/js/browser.min.js'|theme }}"></script>
+            <script src="{{'assets/src/js/breakpoints.min.js'|theme }}"></script>
+            <script src="{{'assets/src/js/util.js'|theme }}"></script>
+            <script src="{{'assets/src/js/main.js'|theme }}"></script>
+            {% framework extras %}
+            {% scripts %}
+    </body>
+</html>

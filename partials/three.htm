@@ -1,0 +1,44 @@
+<!-- Three -->
+<section id="three" class="main special">
+    <div class="container">
+        <span class="image fit primary"><img src="{{'assets/dist/images/pic03.jpg'|theme }}" alt="" /></span>
+        <div class="content">
+            <header class="major">
+                <h2>{{ this.theme.three_title }} <a class="TextColor" href="{{ this.theme.three_url }}" target="_blank">{{this.theme.three_url_title}}</a>{{this.theme.three_last_text}}</h2>
+            </header>
+            <p>{{this.theme.three_description}}</p>
+            <ul class="icons-grid">
+        {% if this.theme.three_items|length > 0 %}
+        {% for three_item in this.theme.three_items %}
+                <li>
+                    <span class="icon {{ three_item.icon }}"></span>
+                    <h3>{{ three_item.name }}</h3>
+                </li>
+                <li>
+                    <span class="icon {{ three_item.icon_three }}"></span>
+                    <h3>{{ three_item.name_three }}</h3>
+                </li>
+        {% endfor %}
+        {% else %}
+                <li>
+                    <span class="icon solid major fa-network-wired"></span>
+                    <h3>CRM</h3>
+                </li>
+                <li>
+                    <span class="icon solid major fa-server"></span>
+                    <h3>Salebot(WatsApp, Telegram, Vk, Facebook, Viber и др)</h3>
+                </li>
+                <li>
+                    <span class="icon solid major fa-user-cog"></span>
+                    <h3>Asterisk(ip телефония, АТС)</h3>
+                </li>
+                <li>
+                    <span class="icon solid major fa-code"></span>
+                    <h3>Wazzup(Интеграция WatsApp)</h3>
+                </li>	
+        {% endif %}	
+            </ul>
+        </div>
+        <a href="#footer" class="goto-next scrolly">Next</a>
+    </div>
+</section>

@@ -1,0 +1,23 @@
+[MailForm]
+==
+<!-- Footer -->
+<section id="footer">
+    <div class="container">
+        <header class="major">
+            <h2>Get in touch</h2>
+        </header>
+
+        {% component 'MailForm' %}
+        
+    </div>
+    <footer>
+        <ul class="icons animate__animated animate__pulse animate__infinite">
+            <li><a href="{{ this.theme.social_telegram }}" class="icon brands alt fa-telegram-plane"><span class="label">telegram</span></a></li>
+            <li><a href="tel:{{ this.theme.social_phone }}" class="icon solid alt fa-phone"><span class="label">Phone</span></a></li>
+            <li><a href="{{ social_whasApp }}" class="icon brands alt fa-whatsapp"><span class="label">Instagram</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Untitled</li><li>Design: <a href="https://skk.kz">SKK.KZ</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
+        </ul>
+    </footer>
+</section>

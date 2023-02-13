@@ -1,0 +1,7 @@
+name: AM-Solution
+description: 'Разрабоно для AM-Solution'
+previewImage: 'assets/dist/images/preview.jpg'
+author: 'SKK'
+homepage: 'https://skk.kz'
+code: ''
+form: fields.yaml
